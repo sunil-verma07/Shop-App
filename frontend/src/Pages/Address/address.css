@@ -1,0 +1,14 @@
+.address-container{
+    display: flex;
+    flex-direction: row;
+    
+    }
+    .address-container .address-content{
+        background-image:url('../../assets/profileimage.jpg');
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+       
+    }
+   

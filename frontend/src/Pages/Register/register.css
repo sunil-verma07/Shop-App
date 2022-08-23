@@ -1,0 +1,99 @@
+.register {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.register-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.register .register-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.register .register-wrapper .register-form {
+  flex: 3;
+  padding: 0 2rem;
+  min-width: 360px;
+  padding-bottom: 3rem;
+}
+.register .register-wrapper .register-form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.register .register-wrapper .register-form .input-group label {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0.2rem;
+}
+.register .register-wrapper .register-form .input-group input {
+  padding: 0.8rem 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+.register .register-wrapper .register-form .register-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.register .register-wrapper .register-button {
+  padding: 0.8rem 1.2rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.45s ease-in-out;
+}
+.register .register-wrapper .register-form .register-links .fp {
+  text-transform: uppercase;
+}
+.register .register-wrapper .register-form .register-links .fp a {
+  color: rgb(203, 138, 54);
+}
+.register .register-wrapper .register-button:hover {
+  background: rgb(0, 0, 0);
+}
+.register .register-wrapper .register-link {
+  flex: 1;
+  min-width: 360px;
+  background: rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .register-wrapper .register-link .image-box{
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1rem;
+}
+.register .register-wrapper .register-link .image-box img{
+  width: 130%;
+  height: 130%;
+  object-position: -30px 0;
+}
+
+.register .register-wrapper .register-link .image-box .image-text{
+  font-size:1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}
+.register .register-wrapper .register-link .image-box .add-button{
+  font-size:3rem;
+  position: absolute;
+  cursor: pointer;
+  bottom:1%;
+  right:1%;
+}

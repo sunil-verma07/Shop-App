@@ -1,0 +1,13 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height:40px;
+}
+p{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    word-spacing: 3px;
+}

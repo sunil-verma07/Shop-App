@@ -1,0 +1,119 @@
+.confirm-oder-container{
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    margin:0 auto;
+    margin-bottom:4rem;
+    flex-wrap: wrap;
+
+}
+.order-heading{
+    font-size:1.6rem;
+    font-weight:500;
+    margin:2rem 0;
+}
+.confirm-order-details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.user-order-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.user-order-info span{
+   display: flex;
+   margin: 10px 5px;
+   flex-direction: row;
+}
+.user-order-info span h3{
+    font-weight:500;
+    font-size: 16px;
+}
+.user-order-products{
+    flex:6;
+    display: flex;
+
+    width: 100%;
+}
+.confirm-order-price{
+    width:30%;
+}
+ 
+    .user-order-products .box {
+        display: flex;
+        width: 90%;
+        overflow: hidden;
+        background: #fff;
+        padding: 2px;
+        border:none !important;
+
+    }
+   .user-order-products .box img {
+        height: 120px;
+        object-fit: cover;
+    }
+    .user-order-products .content {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .user-order-products .content h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        white-space: nowrap; 
+        width: 400px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        font-weight: normal;
+    }
+    .user-order-products .content h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+
+    .right-bar {
+        flex: 25%;
+        margin-left: 20px;
+        padding: 20px;
+        height: 400px;
+        border-radius: 5px;
+        background: #fff;
+    }
+    .right-bar hr {
+        margin-bottom: 25px;
+    }
+    .right-bar p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: #000;
+    }
+
+    @media screen and (max-width: 700px) {
+        .user-order-products .content h3 {
+            width:160px;
+        }
+        
+    }
+    @media screen and (max-width: 900px) {
+        .confirm-order-details{
+            width: 100%;
+        }
+        .confirm-oder-container{
+            flex-direction: column;
+        }
+        .confirm-order-price{
+            width: 100%;
+        }
+        .user-order-products .box {
+            width: 100%;
+        }
+    }
+  

@@ -1,0 +1,20 @@
+.shipping-page{
+    width:40%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+select{
+    font-weight: 300;
+    margin: 0;
+}
+.shipping-heading{
+  text-align: center;
+  font-size:2rem;
+  font-weight:400;
+  margin-top:2rem;
+  
+  text-transform:capitalize;
+}

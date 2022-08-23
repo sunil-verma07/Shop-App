@@ -1,0 +1,21 @@
+.heading h1 {
+    text-align:center;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 20px 0;
+    grid-gap: 20px;
+    font-weight: 400;
+    font-size:1.6rem;
+    margin: 4rem auto 1rem auto;
+    text-transform: uppercase;
+    width: 90%;
+    align-items:center;
+    }
+    
+.heading h1:after,h1:before {
+    content: " ";
+    display: block;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    height:3px;
+    }

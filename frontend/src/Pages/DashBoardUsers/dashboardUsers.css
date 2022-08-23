@@ -1,0 +1,126 @@
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:#fff;
+}
+.dashboard .dashboard-content{
+    display: flex;
+    width: 70%;
+    margin: 2rem auto;
+    align-items: center;
+    overflow-y: auto;
+    height: 80vh;
+    flex-direction: column;
+}
+.dashboard .dashboard-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .dashboard .dashboard-content {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+.table-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+h2 small {
+    font-size: 0.5em;
+}
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.responsive-table .table-header {
+    background-color: #000000;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+    flex-basis: 35%;
+}
+.responsive-table .col {
+  margin: 0;
+}
+.responsive-table .col-2 {
+    flex-basis: 26%;
+    text-overflow: ellipsis;
+    overflow:hidden;             
+    white-space:nowrap;           
+
+}
+.responsive-table .col-3 {
+    flex-basis: 36%; 
+    text-overflow: ellipsis;
+    overflow:hidden;             
+    white-space:nowrap; 
+    
+}
+.responsive-table .col-4 {
+    flex-basis: 4%;
+}
+.delete-icon{
+    font-size: 1.3rem;
+    color: rgb(209, 6, 6);
+    cursor:pointer;
+}
+.admin-search-bar{
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 40%;
+    margin: 1rem 0;
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+    min-width: 16rem;
+}
+.admin-search-bar input{
+    width:94%;
+    border: none;
+    outline:none;
+    font-size: .8rem;
+} 
+.admin-search-bar .admin-search-icon{
+    font-size: 1.7rem;
+}
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+   }
+    .responsive-table li {
+        display: block;
+   }
+    .responsive-table .col {
+        flex-basis: 100%;
+        font-size: .8rem;
+   }
+    .responsive-table .col {
+        display: flex;
+        padding: 8px 0;
+        
+   }
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 8px;
+        content: attr(data-label);
+        flex-basis: 50%;
+   }
+}

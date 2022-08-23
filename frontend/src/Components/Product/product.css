@@ -1,0 +1,74 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    width:16rem;
+    min-width: 16rem;
+    max-width: 16rem;
+    height:28rem;
+    overflow: hidden;
+    margin:2rem .2rem ;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    position: relative;
+}
+.product .image{
+    margin: 0 auto;
+   
+}
+.product .image img{
+    flex:8;
+    height:20rem ;
+}
+.product .details{
+    text-transform: uppercase;
+    font-size: 13px;
+  
+}
+.details h4{
+    font-weight:500;
+    margin: .2rem 0;
+    cursor: pointer;
+    max-width:16rem;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+  
+}
+.details h5{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight:500;
+    margin: .6rem 0;
+}
+.product .image .quick-view{
+    position: absolute;
+    left: 50%;
+    top: 10rem;
+    transform: translate(-50%, -50%);
+    padding:.6rem .4rem;
+    text-transform: uppercase;
+    background-color:rgba(255, 255, 255, 0.784);
+    opacity: 0;
+    transition: all .45s ease-in-out;
+    cursor: pointer;
+    
+}
+.product .image a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.product:hover .image .quick-view{
+    opacity: 1;
+}
+@media (max-width:700px) {
+    .product{
+        max-width:12rem;
+        min-width:12rem;
+        width:12rem;
+    }
+    .product .image img{
+        flex:8;
+        height:15rem ;
+    }
+    
+}

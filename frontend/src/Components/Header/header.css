@@ -1,0 +1,109 @@
+.header {
+    position: relative;
+}
+
+.header img{
+   width: 100%;
+   height:80vh;
+   object-fit: cover;
+   object-position: 0 -100px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-transform: uppercase;
+    justify-content: left;
+}
+.header-content a{
+    margin-top: 1.8rem;
+}
+.header-content h5{
+    font-weight: 200;
+    font-size:2rem;
+}
+.header-content h1{
+    font-size:4.5rem;
+}
+.header-content h4{
+    font-size:2rem;
+    letter-spacing:2rem;
+    text-align: center;
+}
+.header-content span{
+    margin: 2rem 0;
+    border: 1px solid black;
+    width:max-content;
+    padding:.8rem;
+    font-size:1.4rem;
+    cursor:pointer;
+}
+.header-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.header-categories .header-container{
+    flex: 1;
+    height: 30rem;
+    min-width:22rem;
+    max-width: 22rem;
+    margin:.2rem;
+    position: relative;
+    
+}
+.header-categories .header-container img{
+    width: 22rem;
+    object-fit: cover;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out;
+
+}
+.header-categories .header-container h3{
+    position: absolute;
+    top: 90%;
+    left:5%;
+    text-transform:uppercase;
+    color: #fff;
+    font-weight:400;
+    opacity: 0;
+    transition: all 0.45s ease-in-out;
+}
+.header-categories .header-container:hover h3{
+    opacity: 1;
+}
+@media (max-width:700px) {
+    .header img{
+        object-position: -200px ;
+    }
+    .header-content{
+        
+        text-align:left;
+    }
+    .header-content h5{
+   font-size:1rem;
+    }
+    .header-content h1{
+        font-size:2rem;
+        font-weight:700;
+        padding:0;
+    }
+    .header-content h4{
+        font-size:1rem;
+        letter-spacing:.8rem;
+    }
+    .header-content span{
+        font-size:.8rem;
+        padding:.5rem;
+        margin: 1rem 0;
+    }
+    .header-categories{
+        margin-top:0;
+    }
+}

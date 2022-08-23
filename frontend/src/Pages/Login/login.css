@@ -1,0 +1,92 @@
+.login{
+    width: 90%;
+    margin: 0 auto;
+    font-size:14px;
+}
+.login-heading{
+    font-size:2rem;
+    text-transform:uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.login .login-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+.login .login-wrapper .login-form{
+    flex: 1;
+    padding: 0 2rem;
+    min-width: 360px;
+    padding-bottom:3rem;
+}
+.login .login-wrapper .login-form .input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0; 
+}
+.login .login-wrapper .login-form .input-group label{
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 0.6);
+    margin-bottom: .2rem;
+}
+.login .login-wrapper .login-form .input-group input{
+   padding:.8rem .6rem;
+   border: 1px solid rgba(0, 0, 0, 0.6);
+   outline:none;
+}
+.login .login-wrapper .login-form .login-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login .login-wrapper .login-button{
+    padding:.8rem 1.2rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display:inline-block;
+    transition: all 0.45s ease-in-out;
+}
+.login .login-wrapper .login-form .login-links .fp{
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.login .login-wrapper .login-form .login-links .fp a{
+    color: rgb(203, 138, 54);
+}
+.login .login-wrapper .login-button:hover{
+    background: rgb(0, 0, 0);
+}
+.login .login-wrapper .register-link{
+    flex: 1;
+    min-width:360px;
+    background:rgba(0, 0, 0, 0.04);
+    
+}
+.login .login-wrapper .register-link .heading{
+    font-size:1.5rem;
+    text-transform:uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:2rem 0 1rem 2rem;
+}
+.login .login-wrapper .register-link .register-content{
+    margin:0 2rem;
+    
+}
+.login .login-wrapper .register-link .register-p{
+    color:black;
+    margin: .6rem; 
+}
+.login .login-wrapper .register-link li{
+    margin: 0 0 .4rem 4rem;
+}
+.login .login-wrapper .register-link .create{
+    margin: 1.6rem 0 1rem 2rem;
+}
+.login .login-wrapper .register-link .create a{
+    color: #fff;
+}

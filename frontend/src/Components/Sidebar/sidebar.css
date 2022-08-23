@@ -1,0 +1,43 @@
+
+.sidebar {
+  width: 20%;
+  font-size: 14px;
+  height: 80vh;
+}
+
+.nav {
+  text-align: right;
+  margin: 0rem 2rem 0 1rem;
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav ul .my-intro a{
+  font-weight: bold;
+  font-size:16px;
+}
+.nav ul li {
+ 
+  margin: 6em 0;
+}
+.nav ul li a {
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.832);
+  display: block;
+  transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+  color: rgb(0, 0, 0);
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: rgba(0, 0, 0, 0.75);
+}
+.nav .log-out a{
+  color: rgb(201, 0, 0);
+}

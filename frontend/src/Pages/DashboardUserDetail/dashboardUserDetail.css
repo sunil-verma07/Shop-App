@@ -1,0 +1,76 @@
+.dashboard-content-update-user{
+    display: flex;
+    flex-direction: row;
+    width:70%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user-image-default{
+    width:40%;
+}
+.user-image-default img{
+    width:100%;
+}
+.user-admin-details{
+width:40%;
+}
+.user-admin-details .input-wrapper {
+    position: relative;
+    line-height: 14px;
+    margin: 1.3rem 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .user-admin-details .input-wrapper label {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top:-4px;
+    padding: 0 2px;
+    pointer-events: none;
+    background: #fff;
+    transition: transform 100ms ease;
+
+  }
+  .user-admin-details .input-wrapper input {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    padding:1.3rem ;
+    width: 100%;
+    position: relative;
+  }
+  .user-admin-details .input-wrapper select {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    padding:1.3rem ;
+    width: 100%;
+    position: relative;
+  }
+  .button-group-update-user{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-group-update-user .user-admin{
+    width: 100%;
+  }
+
+  @media  (max-width:1000px){
+    .user-admin-details{
+      width: 100%;
+    }
+    .user-admin-details .input-wrapper input,.user-admin-details .input-wrapper select{
+      padding:.8rem ;
+
+    } 
+  }
+  
